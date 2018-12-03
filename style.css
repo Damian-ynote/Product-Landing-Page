@@ -1,0 +1,259 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Lato' , sans-serif;
+    background-color: #eee;
+}
+
+#header{
+    margin-bottom: 2em;
+    width: 100vw;
+    margin: 0 auto;
+    position: fixed;
+    background-color: #eee;
+    z-index: 1;
+    
+}
+
+.logo{
+    padding: 2em;
+    float: left;
+    
+    
+}
+
+.logo img {
+    width: 20em;
+}
+
+#nav-bar{
+    float: right;
+    padding: 2em;
+    
+}
+
+#nav-bar li {
+    display: inline;
+    padding-right: 3em
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10em;
+    margin-bottom: 10em;
+    margin-left: 3em;
+}
+
+h1 {
+    font-size: 1.7em;
+    margin-top: 8em;
+    margin-bottom: .8em;
+}
+
+.first #email {
+    margin-bottom: 2em;
+    padding: .5em 8em .5em .5em;
+}
+
+.first #submit {
+    padding: .5em 1.5em;
+    background-color: orange;
+    border: none;
+    color: black;
+    font-weight: 700;
+    
+}
+
+.main {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.details {
+    display: flex;
+    margin-bottom: 4em;
+}
+
+.left {
+    width: 25%;
+    padding: 1em;
+}
+
+.right {
+    width: 75%;
+    padding: 1em;
+}
+
+#features i {
+    color: orange;
+}
+
+#video_ {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    
+}
+
+#video {
+    width: 80%;
+}
+
+#pricing {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.select {
+     margin-right: 1.5em;
+     border: 1px solid black;
+     border-radius: 3px;
+     width: 20em;
+     height: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select #button {
+    padding: 1em 2em;
+    border: none;
+    background-color: orange;
+    margin-bottom: 1.5em;
+    
+}
+
+.select h2 {
+    font-size: 1em;
+    padding: 1em;
+    background-color: #ddd;
+    width: 100%;
+}
+
+.select h3 {
+    font-size: 2em;
+}
+
+footer {
+    margin-top: 4em;
+    background-color: #ddd;
+    height: 4em;
+    padding: 1.5em;
+}
+
+.copyright {
+    float: left;
+}
+
+.footer-nav {
+    float: right;
+}
+
+.footer-nav li {
+    display: inline-block;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+}
+
+@media (max-width: 650px) {
+    
+    .logo {
+        margin: 0 auto;
+        padding-left: 1em;
+    }
+    
+    #nav-bar {
+    width: 100%;
+    padding: 0;
+    }
+    
+    #nav-bar ul {
+        margin-bottom: 1.5em;
+    }
+    
+    #nav-bar li {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: .7em;
+        
+    }
+    
+    .first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30em;
+    margin-left:0;
+    margin-bottom: 1em;
+}
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #video_ {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    #Pricing {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .select {
+        margin-bottom: 1.5em;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 5em;
+    }
+    
+    .footer-nav {
+        margin: 1em 0 1em 2.2em;
+       
+    }
+    
+}
+    
+}
